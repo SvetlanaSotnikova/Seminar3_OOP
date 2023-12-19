@@ -26,13 +26,15 @@ public class Seminar1_Lesson {
         Dog.wakeup(4);
         System.out.println(".................................");
 
-        Barsik.lifeCycle();
+        // Barsik.lifeCycle();
         System.out.println("\n\n---Homework---\n");
 
-        //---HOMEWORK---
-        AnimalRunningAndFlyingAndSwimming Duck = new AnimalRunningAndFlyingAndSwimming("Kostea", LocalDate.of(2023, 12, 1), new ArrayList<>(), "healthy", "You");
+        // ---HOMEWORK---
+        AnimalRunningAndFlyingAndSwimming Duck = new AnimalRunningAndFlyingAndSwimming("Kostea",
+                LocalDate.of(2023, 12, 1), new ArrayList<>(), "healthy", "You");
 
-        AnimalRunningAndSwimming Penguin = new AnimalRunningAndSwimming("mySister", LocalDate.of(2009, 12, 5), new ArrayList<>(), "healthy", "me");
+        AnimalRunningAndSwimming Penguin = new AnimalRunningAndSwimming("mySister", LocalDate.of(2009, 12, 5),
+                new ArrayList<>(), "healthy", "me");
 
         System.out.println("--Duck");
         // Duck.fly();
@@ -45,5 +47,32 @@ public class Seminar1_Lesson {
         // Penguin.toGo();
         // Penguin.swim();
         Penguin.toGoAndSwimAction();
+
+        // --SEMINAR 2--
+        System.out.println("\n\n---Seminar 2---\n");
+        // Goable goable = (x, y) -> x + y;
+        // System.out.println(goable.run(3, 2));
+        // ИЛИ
+        // если метод будет void
+        // Goable goable = (x, y) -> System.out.println(x + y);
+        // goable.run(6, 4);
+        // ИЛИ
+        // Goable goable = Double::sum;
+        Penguin.run();
+        Penguin.swim();
+    
+        Duck.run();
+        Duck.swim();
+        Duck.fly();
+
+        Barsik.run();
+
+        System.out.println();
+
+        VeterinaryClinic veterinaryClinic = new VeterinaryClinic();
+        veterinaryClinic.addPatients(Penguin, Barsik, Dog, Duck);
+        System.out.println(veterinaryClinic.getGlobles());
+        System.out.println(veterinaryClinic.getPatients());
+
     }
 }

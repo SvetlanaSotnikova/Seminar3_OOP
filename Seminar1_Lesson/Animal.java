@@ -1,12 +1,13 @@
 import java.time.LocalDate;
 import java.util.List;
 
-public class Animal {
+public abstract class Animal {
     protected String name;
     protected LocalDate birthDate;
     protected List<String> vaccination;
     protected String fillness;
     protected String owner;
+    protected String type;
 
     public Animal(String name, LocalDate birthDate, List<String> vaccination, String fillness, String owner) {
         this.name = name;
@@ -14,6 +15,7 @@ public class Animal {
         this.vaccination = vaccination;
         this.fillness = fillness;
         this.owner = owner;
+        this.type = getClass().getSimpleName();
     }
 
     public String getName() {
@@ -62,36 +64,39 @@ public class Animal {
         System.out.println("Animal sleeping");
     }
 
-    public void lifeCycle() {
-        wakeup();
-        Eat();
-        Play();
-        Sleep();
-    }
+    // public void lifeCycle() {
+    // wakeup();
+    // Eat();
+    // Play();
+    // Sleep();
+    // }
 
     // -----HOMEWORK-----
-    private void toGo() {
-        System.out.println("Animal is moving");
-    }
+    // private void toGo() {
+    // System.out.println("Animal is moving");
+    // }
 
-    private void fly() {
-        System.out.println("Animal is flying");
-    }
+    // private void fly() {
+    // System.out.println("Animal is flying");
+    // }
 
-    private void swim() {
-        System.out.println("Animal is swimming");
-    }
+    // private void swim() {
+    // System.out.println("Animal is swimming");
+    // }
 
     // я для ясности привела два метода для разных животных, но программист все
     // равно может создать совю летающую собаку :/
     public void toGoAndFlyAndSwimAction() {
-        toGo();
-        fly();
-        swim();
+        // toGo();
+        // fly();
+        // swim();
     }
 
     public void toGoAndSwimAction() {
-        toGo();
-        swim();
+        // toGo();
+        // swim();
     }
+
+    // ---SEMINAR 2---
+    // public abstract void lifeCycle();
 }
