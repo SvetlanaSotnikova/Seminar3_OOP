@@ -70,15 +70,28 @@ public class Animal {
     }
 
     // -----HOMEWORK-----
-    public void toGo() {
+    private void toGo() {
         System.out.println("Animal is moving");
     }
 
-    public void fly() {
+    private void fly() {
         System.out.println("Animal is flying");
     }
 
-    public void swim() {
+    private void swim() {
         System.out.println("Animal is swimming");
+    }
+
+    // я для ясности привела два метода для разных животных, но программист все
+    // равно может создать совю летающую собаку :/
+    public void toGoAndFlyAndSwimAction() {
+        toGo();
+        fly();
+        swim();
+    }
+
+    public void toGoAndSwimAction() {
+        toGo();
+        swim();
     }
 }

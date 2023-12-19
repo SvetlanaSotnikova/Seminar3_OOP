@@ -27,5 +27,23 @@ public class Seminar1_Lesson {
         System.out.println(".................................");
 
         Barsik.lifeCycle();
+        System.out.println("\n\n---Homework---\n");
+
+        //---HOMEWORK---
+        AnimalRunningAndFlyingAndSwimming Duck = new AnimalRunningAndFlyingAndSwimming("Kostea", LocalDate.of(2023, 12, 1), new ArrayList<>(), "healthy", "You");
+
+        AnimalRunningAndSwimming Penguin = new AnimalRunningAndSwimming("mySister", LocalDate.of(2009, 12, 5), new ArrayList<>(), "healthy", "me");
+
+        System.out.println("--Duck");
+        // Duck.fly();
+        // Duck.toGo();
+        // Duck.swim();
+        Duck.toGoAndFlyAndSwimAction(); // такое себе, знаю
+
+        System.out.println("--Penguin");
+        // // Penguin.fly(); // я могу это использовать но делать этого нельзя, понимаю
+        // Penguin.toGo();
+        // Penguin.swim();
+        Penguin.toGoAndSwimAction();
     }
 }
