@@ -30,10 +30,10 @@ public class Seminar1_Lesson {
         System.out.println("\n\n---Homework---\n");
 
         // ---HOMEWORK---
-        AnimalRunningAndFlyingAndSwimming Duck = new AnimalRunningAndFlyingAndSwimming("Kostea",
+        Duck Duck = new Duck("Kostea",
                 LocalDate.of(2023, 12, 1), new ArrayList<>(), "healthy", "You");
 
-        AnimalRunningAndSwimming Penguin = new AnimalRunningAndSwimming("mySister", LocalDate.of(2009, 12, 5),
+        Penguin Penguin = new Penguin("mySister", LocalDate.of(2009, 12, 5),
                 new ArrayList<>(), "healthy", "me");
 
         System.out.println("--Duck");

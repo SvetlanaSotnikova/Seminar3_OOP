@@ -64,12 +64,12 @@ public abstract class Animal {
         System.out.println("Animal sleeping");
     }
 
-    // public void lifeCycle() {
-    // wakeup();
-    // Eat();
-    // Play();
-    // Sleep();
-    // }
+    public void lifeCycle() {
+        wakeup();
+        Eat();
+        Play();
+        Sleep();
+    }
 
     // -----HOMEWORK-----
     // private void toGo() {
