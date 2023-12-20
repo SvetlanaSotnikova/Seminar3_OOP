@@ -4,7 +4,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Seminar1_Lesson {
+public class Main {
     public static void main(String[] args) {
         // int[] i = new int[] {6,1,3,4,5};
 
