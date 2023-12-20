@@ -1,7 +1,7 @@
 import java.time.LocalDate;
 import java.util.List;
 
-public class Penguin extends Animal implements Swimble, Goable {
+public class Penguin extends Animal implements Swimable, Goable {
 
     public Penguin(String name, LocalDate birthDate, List<String> vaccination, String fillness,
             String owner) {

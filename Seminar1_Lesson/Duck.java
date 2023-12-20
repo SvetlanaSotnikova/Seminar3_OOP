@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 // 
-public class Duck extends Animal implements Goable, Swimble, Flyble {
+public class Duck extends Animal implements Goable, Swimable, Flyable {
 
     public Duck(final String name, final LocalDate birthDate,
             final List<String> vaccination,
