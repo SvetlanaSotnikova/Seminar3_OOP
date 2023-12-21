@@ -7,6 +7,7 @@ public class VeterinaryClinic {
     private List<Animal> patients = new ArrayList<>();
     private List<Doctor> doctors = new ArrayList<>();
     private List<Nurse> nurses = new ArrayList<>();
+    private List<Employee> employees = new ArrayList<>();
 
     public void addPatient(Animal animal) {
         patients.add(animal);
@@ -24,15 +25,20 @@ public class VeterinaryClinic {
             nurses.add((Nurse) nurse);
             setDoctorForNurse((Doctor) doctor, (Nurse) nurse);
             setNurseForDoctor((Nurse) nurse, (Doctor) doctor);
+            employees.add((Doctor) doctor);
+            employees.add((Nurse) nurse);
+
         }
     }
 
     public void addNurse(Employee nurse) {
         nurses.add((Nurse) nurse);
+        employees.add((Nurse) nurse);
     }
 
-    public void addDoctor(Employee sashaCutir) {
-        doctors.add((Doctor) sashaCutir);
+    public void addDoctor(Employee doctor) {
+        doctors.add((Doctor) doctor);
+        employees.add((Doctor) doctor);
     }
 
     private void setDoctorForNurse(Doctor doctor, Nurse nurse) {
@@ -80,5 +86,9 @@ public class VeterinaryClinic {
 
     public List<Animal> getPatients() {
         return patients;
+    }
+
+    public List<Employee> getEmployees(){
+        return employees;
     }
 }

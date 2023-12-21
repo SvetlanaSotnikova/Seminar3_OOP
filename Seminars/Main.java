@@ -124,5 +124,9 @@ public class Main {
         for (Goable goable : veterinaryClinic.getGlobles()) {
             System.out.println(goable);
         }
+        System.out.println("\nСписок всех сотрудников--\n");
+        for (Employee employee : veterinaryClinic.getEmployees()) {
+            System.out.println(employee);
+        }
     }
 }
