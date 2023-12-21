@@ -1,7 +1,7 @@
 /**
  * InnerNurse
  */
-public class Nurse extends Employee implements isAssist {
+public class Nurse extends Employee implements Assist {
 
     private Doctor doctor;
 

@@ -1,7 +1,7 @@
 /**
  * InnerDoctor
  */
-public class Doctor extends Employee implements isWork {
+public class Doctor extends Employee implements Work {
 
     private Nurse nurse;
     private String specialization;
