@@ -16,7 +16,7 @@ public class PharmacyMain {
         pharmacy1.addComponents(paracetamol, valeriana, ugoli);
 
         Pharmacy pharmacy2 = new Pharmacy();
-        pharmacy2.addComponents(ibufen);
+        pharmacy2.addComponents(paracetamol, valeriana, ibufen); // HOMEWORK SEMINAR 3
 
         Iterator<Component> iterator = pharmacy1;
         Iterator<Component> iterator2 = pharmacy2;
@@ -32,9 +32,12 @@ public class PharmacyMain {
         // --- HOMEWORK SEMINAR 3 ---
         Set<Pharmacy> sPharmacies = new HashSet<>(Arrays.asList(pharmacy1, pharmacy2));
         System.out.println(sPharmacies.size());
-        
+
+        // мне почему-то кажется что set здесь не так работает :/
+        // я закомментровала equals и hashCose и ничего не изменилось, почему
+
         for (Pharmacy pharmacy : sPharmacies) {
-            System.out.println(pharmacy );
+            System.out.println(pharmacy);
         }
     }
 }
