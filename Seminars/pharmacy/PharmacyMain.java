@@ -16,7 +16,7 @@ public class PharmacyMain {
         pharmacy1.addComponents(paracetamol, valeriana, ugoli);
 
         Pharmacy pharmacy2 = new Pharmacy();
-        pharmacy2.addComponents(paracetamol, valeriana, ibufen); // HOMEWORK SEMINAR 3
+        pharmacy2.addComponents(paracetamol, valeriana, valeriana, ibufen); // HOMEWORK SEMINAR 3
 
         Iterator<Component> iterator = pharmacy1;
         Iterator<Component> iterator2 = pharmacy2;

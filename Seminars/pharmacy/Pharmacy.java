@@ -2,6 +2,7 @@ package pharmacy;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
@@ -33,7 +34,7 @@ public class Pharmacy implements Iterator<Component>, Comparable<Pharmacy> {
     //--- HOMEWORK SEMINAR 3 ---
     @Override
     public int compareTo(Pharmacy o) {
-        return Integer.compare(this.components.size(), o.components.size());
+        return Objects.compare(this, o, Comparator.comparingInt(p -> p.components.size()));
     }
 
     @Override
